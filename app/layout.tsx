@@ -1,5 +1,16 @@
 import '@/app/ui/global.css';
-import { inter } from './ui/fonts'; 
+import { inter } from './ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | NextJs Learn Dashboard',
+    default: 'NextJs Learn Dashboard',
+  }, 
+  description: '드디어 NextJs Learn을 끝마쳤어요',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+};
+
 
 export default function RootLayout({
   children,

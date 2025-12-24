@@ -6,6 +6,12 @@ import { Suspense } from "react";
 import { InvoicesTableSkeleton } from "@/app/ui/skeletons";
 import { fetchInvoicesPages } from '@/app/lib/data';
 import Pagination from "@/app/ui/invoices/pagination";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Invoices',
+    description: '피땀 흘려 만든 인보이스 페이지입니다.',
+};
 
 export default async function Page(props: {
     searchParams?: Promise<{

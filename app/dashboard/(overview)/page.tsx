@@ -7,6 +7,12 @@ import { LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons
 import { Suspense } from 'react';
 import CardWrapper from '@/app/ui/dashboard/cards';
 import { CardsSkeleton } from './../../ui/skeletons';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Dashboard',
+    description: '피땀 흘려 만든 대시보드입니다.',
+};
 
 export default async function Page() {
 
